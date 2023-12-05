@@ -9,19 +9,24 @@
 		"WordPress",
 		"theme"
 	],
-	"homepage": "https://github.com/WordPress/twentytwentyfour#readme",
+	"homepage": "https://github.com/MaxenceColet/wp-starter-2024#readme",
 	"repository": {
 		"type": "git",
-		"url": "git+https://github.com/WordPress/twentytwentyfour.git"
+		"url": "git+https://github.com/MaxenceColet/wp-starter-2024.git"
 	},
 	"bugs": {
-		"url": "https://github.com/WordPress/twentytwentyfour/issues"
+		"url": "https://github.com/MaxenceColet/wp-starter-2024/issues"
 	},
 	"devDependencies": {
+		"@wordpress/env": "^8.13.0",
 		"@wordpress/stylelint-config": "^20.0.2",
 		"stylelint": "^14.10.0"
 	},
 	"scripts": {
+		"wp-env": "wp-env",
+		"start": "npm run wp-env:start && npm run theme:activate",
+		"wp-env:start": "wp-env start --update",
+		"theme:activate": "wp-env run cli wp theme activate wp-starter-2024",
 		"lint:css": "stylelint **/*.css -i .gitignore",
 		"lint:css:fix": "stylelint **/*.css -i .gitignore --fix",
 		"lint:php": "./vendor/bin/phpcs",

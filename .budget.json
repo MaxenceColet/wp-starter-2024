@@ -1,0 +1,31 @@
+[
+    {
+      "resourceSizes": [
+        {
+          "resourceType": "document",
+          "budget": 2.4
+        },
+        {
+          "resourceType": "stylesheet",
+          "budget": 3.12
+        },
+        {
+          "resourceType": "script",
+          "budget": 15.84
+        },
+        {
+          "resourceType": "image",
+          "budget": 35
+        },
+        {
+          "resourceType": "media",
+          "budget": 0
+        },
+        {
+          "resourceType": "font",
+          "budget": 28
+        }
+      ],
+      "timings": []
+    }
+  ]
