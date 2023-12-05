@@ -13,7 +13,7 @@
 	<div class="wp-block-group alignwide" style="padding-top:var(--wp--preset--spacing--50);padding-bottom:var(--wp--preset--spacing--50)">
 		<!-- wp:image {"width":"40px","height":"auto","sizeSlug":"full","linkDestination":"none"} -->
 		<figure class="wp-block-image size-full is-resized">
-			<img src="<?php echo esc_url( get_template_directory_uri() ); ?>/assets/images/icon-message.webp" alt="" style="width:40px;height:auto" />
+			<img src="<?php echo esc_url( get_template_directory_uri() ); ?>/assets/images/icon-message.avif" alt="" style="width:40px;height:auto" />
 		</figure>
 		<!-- /wp:image -->
 

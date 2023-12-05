@@ -16,7 +16,6 @@ jobs:
         uses: actions/setup-node@v3
         with:
           node-version: 20.x
-      - run: npm install
       - run: npm i -g @wordpress/env
       - run: wp-env start
       - run: wp-env run cli wp theme activate wp-starter-2024

@@ -20,12 +20,16 @@
 	"devDependencies": {
 		"@wordpress/env": "^8.13.0",
 		"@wordpress/stylelint-config": "^20.0.2",
+		"sharp-cli": "^4.2.0",
 		"stylelint": "^14.10.0"
 	},
 	"scripts": {
 		"wp-env": "wp-env",
 		"start": "npm run wp-env:start && npm run theme:activate",
+
+		"image:optimize": "sharp -i ./assets/images/*.webp -o ./assets/images -f avif",
 		"wp-env:start": "wp-env start --update",
+		"wp-env:destroy": "wp-env destroy",
 		"theme:activate": "wp-env run cli wp theme activate wp-starter-2024",
 		"lint:css": "stylelint **/*.css -i .gitignore",
 		"lint:css:fix": "stylelint **/*.css -i .gitignore --fix",

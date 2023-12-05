@@ -110,7 +110,7 @@ Make sure to add alt text to your images and to make sure to remove the IDs from
 
 ```
 <!-- wp:image {"id":125,"sizeSlug":"large","linkDestination":"none"} -->
-<figure class="wp-block-image size-large"><img src="http://wp-stable.test/wp-content/themes/twentytwentyfour/assets/images/project.webp" alt="" class="wp-image-125"/></figure>
+<figure class="wp-block-image size-large"><img src="http://wp-stable.test/wp-content/themes/twentytwentyfour/assets/images/project.avif" alt="" class="wp-image-125"/></figure>
 <!-- /wp:image -->
 ```
 
@@ -118,7 +118,7 @@ would turn into
 
 ```
 <!-- wp:image {"sizeSlug":"large","linkDestination":"none"} -->
-<figure class="wp-block-image size-large"><img src="<?php echo esc_url( get_template_directory_uri() ); ?>/assets/images/project.webp" alt="<?php echo esc_attr_x( 'Picture of a building', 'Alt text for project picture', 'twentytwentyfour' ); ?>"/></figure>
+<figure class="wp-block-image size-large"><img src="<?php echo esc_url( get_template_directory_uri() ); ?>/assets/images/project.avif" alt="<?php echo esc_attr_x( 'Picture of a building', 'Alt text for project picture', 'twentytwentyfour' ); ?>"/></figure>
 <!-- /wp:image -->
 ```
 
