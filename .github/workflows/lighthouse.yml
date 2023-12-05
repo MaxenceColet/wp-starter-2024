@@ -2,7 +2,7 @@ name: LightHouse CI
 
 on:
   push:
-    branches: [main]
+    branches: [trunk]
   pull_request:
     branches: ['**']
 
