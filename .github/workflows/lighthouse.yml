@@ -21,7 +21,6 @@ jobs:
         with:
           node-version: ${{ matrix.node }}
       - run: npm install
-      - run: npm run build
       - run: npm i -g @wordpress/env
       - run: wp-env start
       - run: wp-env run cli wp theme activate wp-starter-2024
