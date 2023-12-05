@@ -28,3 +28,4 @@ jobs:
           urls: 
             http://localhost:8888
           budgetPath: .budget.json
+          uploadArtifacts: true
