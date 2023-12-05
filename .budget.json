@@ -3,19 +3,19 @@
       "resourceSizes": [
         {
           "resourceType": "document",
-          "budget": 2.4
+          "budget": 50
         },
         {
           "resourceType": "stylesheet",
-          "budget": 3.12
+          "budget": 10
         },
         {
           "resourceType": "script",
-          "budget": 15.84
+          "budget": 20
         },
         {
           "resourceType": "image",
-          "budget": 35
+          "budget": 80
         },
         {
           "resourceType": "media",
@@ -23,7 +23,7 @@
         },
         {
           "resourceType": "font",
-          "budget": 28
+          "budget": 100
         }
       ],
       "timings": []
