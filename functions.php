@@ -12,20 +12,20 @@
  * Register block styles.
  */
 
-if ( ! function_exists( 'wp-starter-2024_block_styles' ) ) :
+if ( ! function_exists( 'wpstarter2024_block_styles' ) ) :
 	/**
 	 * Register custom block styles
 	 *
 	 * @since Twenty Twenty-Four 1.0
 	 * @return void
 	 */
-	function wp-starter-2024_block_styles() {
+	function wpstarter2024_block_styles() {
 
 		register_block_style(
 			'core/details',
 			array(
 				'name'         => 'arrow-icon-details',
-				'label'        => __( 'Arrow icon', 'wp-starter-2024' ),
+				'label'        => __( 'Arrow icon', 'wpstarter2024' ),
 				/*
 				 * Styles for the custom Arrow icon style of the Details block
 				 */
@@ -48,7 +48,7 @@ if ( ! function_exists( 'wp-starter-2024_block_styles' ) ) :
 			'core/post-terms',
 			array(
 				'name'         => 'pill',
-				'label'        => __( 'Pill', 'wp-starter-2024' ),
+				'label'        => __( 'Pill', 'wpstarter2024' ),
 				/*
 				 * Styles variation for post terms
 				 * https://github.com/WordPress/gutenberg/issues/24956
@@ -71,7 +71,7 @@ if ( ! function_exists( 'wp-starter-2024_block_styles' ) ) :
 			'core/list',
 			array(
 				'name'         => 'checkmark-list',
-				'label'        => __( 'Checkmark', 'wp-starter-2024' ),
+				'label'        => __( 'Checkmark', 'wpstarter2024' ),
 				/*
 				 * Styles for the custom checkmark list block style
 				 * https://github.com/WordPress/gutenberg/issues/51480
@@ -90,7 +90,7 @@ if ( ! function_exists( 'wp-starter-2024_block_styles' ) ) :
 			'core/navigation-link',
 			array(
 				'name'         => 'arrow-link',
-				'label'        => __( 'With arrow', 'wp-starter-2024' ),
+				'label'        => __( 'With arrow', 'wpstarter2024' ),
 				/*
 				 * Styles for the custom arrow nav link block style
 				 */
@@ -108,7 +108,7 @@ if ( ! function_exists( 'wp-starter-2024_block_styles' ) ) :
 			'core/heading',
 			array(
 				'name'         => 'asterisk',
-				'label'        => __( 'With asterisk', 'wp-starter-2024' ),
+				'label'        => __( 'With asterisk', 'wpstarter2024' ),
 				'inline_style' => "
 				.is-style-asterisk:before {
 					content: '';
@@ -144,20 +144,20 @@ if ( ! function_exists( 'wp-starter-2024_block_styles' ) ) :
 	}
 endif;
 
-add_action( 'init', 'wp-starter-2024_block_styles' );
+add_action( 'init', 'wpstarter2024_block_styles' );
 
 /**
  * Enqueue block stylesheets.
  */
 
-if ( ! function_exists( 'wp-starter-2024_block_stylesheets' ) ) :
+if ( ! function_exists( 'wpstarter2024_block_stylesheets' ) ) :
 	/**
 	 * Enqueue custom block stylesheets
 	 *
 	 * @since Twenty Twenty-Four 1.0
 	 * @return void
 	 */
-	function wp-starter-2024_block_stylesheets() {
+	function wpstarter2024_block_stylesheets() {
 		/**
 		 * The wp_enqueue_block_style() function allows us to enqueue a stylesheet
 		 * for a specific block. These will only get loaded when the block is rendered
@@ -169,7 +169,7 @@ if ( ! function_exists( 'wp-starter-2024_block_stylesheets' ) ) :
 		wp_enqueue_block_style(
 			'core/button',
 			array(
-				'handle' => 'wp-starter-2024-button-style-outline',
+				'handle' => 'wpstarter2024-button-style-outline',
 				'src'    => get_parent_theme_file_uri( 'assets/css/button-outline.css' ),
 				'ver'    => wp_get_theme( get_template() )->get( 'Version' ),
 				'path'   => get_parent_theme_file_path( 'assets/css/button-outline.css' ),
@@ -178,20 +178,20 @@ if ( ! function_exists( 'wp-starter-2024_block_stylesheets' ) ) :
 	}
 endif;
 
-add_action( 'init', 'wp-starter-2024_block_stylesheets' );
+add_action( 'init', 'wpstarter2024_block_stylesheets' );
 
 /**
  * Register pattern categories.
  */
 
-if ( ! function_exists( 'wp-starter-2024_pattern_categories' ) ) :
+if ( ! function_exists( 'wpstarter2024_pattern_categories' ) ) :
 	/**
 	 * Register pattern categories
 	 *
 	 * @since Twenty Twenty-Four 1.0
 	 * @return void
 	 */
-	function wp-starter-2024_pattern_categories() {
+	function wpstarter2024_pattern_categories() {
 
 		register_block_pattern_category(
 			'page',
@@ -203,4 +203,4 @@ if ( ! function_exists( 'wp-starter-2024_pattern_categories' ) ) :
 	}
 endif;
 
-add_action( 'init', 'wp-starter-2024_pattern_categories' );
+add_action( 'init', 'wpstarter2024_pattern_categories' );
