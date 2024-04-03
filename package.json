@@ -26,9 +26,9 @@
 	"scripts": {
 		"wp-env": "wp-env",
 		"start": "npm run wp-env:start && npm run theme:activate",
-
 		"image:optimize": "sharp -i ./assets/images/*.webp -o ./assets/images -f avif",
-		"wp-env:start": "wp-env start --update",
+		"wp-env:start": "wp-env start",
+		"wp-env:update": "wp-env start --update",
 		"wp-env:destroy": "wp-env destroy",
 		"theme:activate": "wp-env run cli wp theme activate wp-starter-2024",
 		"lint:css": "stylelint **/*.css -i .gitignore",

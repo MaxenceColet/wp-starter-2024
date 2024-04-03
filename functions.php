@@ -229,7 +229,7 @@ add_action( 'init', 'ws_disable_emojis' );
 /**
 * Filter function used to remove the tinymce emoji plugin.
 * 
-* @param array $plugins 
+* @param array $plugins
 * @return array Difference betwen the two arrays
 */
 function ws_disable_emojis_tinymce( $plugins ) {
